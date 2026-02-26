@@ -41,7 +41,7 @@ export function EditExpenseModal({ expense, onSave, onClose }) {
           {/* Category */}
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-2">Category</label>
-            <div className="grid grid-cols-4 gap-2">
+            <div className="grid grid-cols-4 gap-1.5">
               {DEFAULT_CATEGORIES.map(cat => (
                 <button
                   key={cat.id}
@@ -49,12 +49,12 @@ export function EditExpenseModal({ expense, onSave, onClose }) {
                   onClick={() => setCategory(cat.id)}
                   className={`p-2 rounded-lg text-center transition-all ${
                     category === cat.id
-                      ? 'bg-primary-500 text-white'
+                      ? 'bg-primary-500 text-white shadow-md'
                       : 'bg-gray-100 text-gray-700'
                   }`}
                 >
-                  <div className="text-xl">{cat.icon}</div>
-                  <div className="text-xs truncate">{cat.name}</div>
+                  <div className="text-lg">{cat.icon}</div>
+                  <div className="text-[10px] leading-tight truncate">{cat.name}</div>
                 </button>
               ))}
             </div>

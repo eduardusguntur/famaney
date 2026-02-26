@@ -47,12 +47,20 @@ export function getPreviousMonthRange(date = new Date()) {
 
 export const DEFAULT_CATEGORIES = [
   { id: 'makan', name: 'Makan', icon: '🍔' },
+  { id: 'minuman', name: 'Minuman', icon: '☕' },
+  { id: 'groceries', name: 'Groceries', icon: '🛒' },
   { id: 'transport', name: 'Transport', icon: '🚗' },
-  { id: 'belanja', name: 'Belanja', icon: '🛒' },
+  { id: 'bensin', name: 'Bensin', icon: '⛽' },
+  { id: 'belanja', name: 'Belanja', icon: '🛍️' },
   { id: 'hiburan', name: 'Hiburan', icon: '🎬' },
   { id: 'kesehatan', name: 'Kesehatan', icon: '💊' },
-  { id: 'pulsa', name: 'Pulsa/Internet', icon: '📱' },
+  { id: 'pulsa', name: 'Pulsa/Data', icon: '📱' },
+  { id: 'listrik', name: 'Listrik/Air', icon: '💡' },
   { id: 'rumah', name: 'Rumah', icon: '🏠' },
+  { id: 'pet', name: 'Pet', icon: '🐾' },
+  { id: 'kendaraan', name: 'Kendaraan', icon: '🔧' },
+  { id: 'skincare', name: 'Skincare', icon: '✨' },
+  { id: 'bayi', name: 'Bayi', icon: '🍼' },
   { id: 'lainnya', name: 'Lainnya', icon: '📦' },
 ]
 
@@ -69,4 +77,12 @@ export const CHART_COLORS = [
   '#ec4899', // pink
   '#06b6d4', // cyan
   '#84cc16', // lime
+  '#f97316', // orange
+  '#14b8a6', // teal
+  '#a855f7', // purple
+  '#e11d48', // rose
+  '#0284c7', // sky
+  '#65a30d', // green
+  '#d946ef', // fuchsia
+  '#78716c', // stone
 ]

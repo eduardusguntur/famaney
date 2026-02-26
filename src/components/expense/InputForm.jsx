@@ -77,20 +77,20 @@ export function InputForm() {
           <label className="block text-sm font-medium text-gray-700 mb-3">
             Category
           </label>
-          <div className="grid grid-cols-4 gap-2">
+          <div className="grid grid-cols-4 gap-1.5">
             {DEFAULT_CATEGORIES.map(cat => (
               <button
                 key={cat.id}
                 type="button"
                 onClick={() => setCategory(cat.id)}
-                className={`p-3 rounded-xl text-center transition-all ${
+                className={`p-2 rounded-lg text-center transition-all ${
                   category === cat.id
-                    ? 'bg-primary-500 text-white shadow-lg scale-105'
+                    ? 'bg-primary-500 text-white shadow-md scale-105'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
               >
-                <div className="text-2xl mb-1">{cat.icon}</div>
-                <div className="text-xs truncate">{cat.name}</div>
+                <div className="text-lg">{cat.icon}</div>
+                <div className="text-[10px] leading-tight truncate">{cat.name}</div>
               </button>
             ))}
           </div>
